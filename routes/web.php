@@ -23,3 +23,14 @@ Route::get('/', [TaskController::class, "index"])->name("index");
 Route::get('/Credits', function () {
     return view("creditos");
 })->name('credits');
+
+Route::get('/Create', [TaskController::class, "newTask"])->name("newTask");
+
+Route::post('/Create', [TaskController::class, "insertTask"])->name("insertTask");
+
+Route::get('/Edit/{task}', [TaskController::class, "edit"])->name("editTask");
+
+Route::put('/Edit/{task}', [TaskController::class, "editTask"])->name("editTaskPost");
+
+Route::get('Delete/{id}',[TaskController::class, "deleteByID"])->name("delete");
+
