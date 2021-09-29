@@ -11,9 +11,9 @@
         <thead class="thead-dark">
             <tr>
                 <th>Ícono</th>
-                <th>Nombre</th>
+                <th id="tb-nombre">Nombre</th>
                 <th>Descripción</th>
-                <th>Fecha</th>
+                <th id="tb-date">Fecha</th>
                 <th id="tb-action">Acción</th>
            </tr>
         </thead>
@@ -24,10 +24,10 @@
                 <td>
                     <img src="IMG/icons/icon{{$task->icon}}.png" alt="" class="table-icon"> 
                 </td>
-                <td>
+                <td >
                     {{$task->taskName}}
                 </td>
-                <td>
+                <td class="task-column">
                     {{$task->desciption}}
                 </td>
                 <td>

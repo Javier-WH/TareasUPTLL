@@ -11,9 +11,21 @@
 
 #table-container {
     height: 630px;
-    width: 1000px;
+    width: 1500px;
     margin: auto;
     margin-bottom: 30px;
+}
+
+
+/* .task-column {} */
+
+#tb-nombre {
+    width: 250px;
+}
+
+#tb-date,
+#tb-action {
+    width: 130px;
 }
 
 .hidden {
