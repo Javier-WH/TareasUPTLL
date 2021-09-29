@@ -7,6 +7,7 @@
     width: 500px;
     margin: auto;
     text-align: center;
+    overflow-y: visible;
 }
 
 #table-container {
@@ -17,11 +18,41 @@
 }
 
 
-/* .task-column {} */
+/* #tabla {
+    height: 630px;
+} */
 
-#tb-nombre {
-    width: 250px;
+#tb-icon {
+    width: 70px;
 }
+
+.name-div,
+.description-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow-y: auto;
+}
+
+.task-column {
+    position: relative;
+    max-width: 800px;
+}
+
+.name-column {
+    position: relative;
+    width: 200px;
+}
+
+
+/* #tb-nombre {
+    width: 250px;
+} */
 
 #tb-date,
 #tb-action {

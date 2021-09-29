@@ -1,6 +1,6 @@
 @extends("templates.template")
 @section("content")
-<!-- <link rel="stylesheet" href="CSS/new.css"> -->
+
   <script type="text/javascript" src="{{ asset('JS/new.js') }}" defer></script>
 
 <h1>Ingresa la nueva tarea</h1>
@@ -9,11 +9,11 @@
         @csrf
         <div class="data-container">
             <label for="taskName">Tarea</label>
-            <input type="text" id="taskName" name="taskName" required autocomplete="off">
+            <input type="text" id="taskName" name="taskName" required autocomplete="off" maxlength="50">
         </div>
         <div class="data-container">
             <label for="taskDescription">Descripcion</label>
-            <textarea id="taskDescription" name="taskDescription" cols="30" rows="5" required></textarea>
+            <textarea id="taskDescription" name="taskDescription" cols="30" rows="5" required maxlength="500"></textarea>
         </div>
         <div class="data-container" >
             <label for="taskDate">Fecha</label>

@@ -10,7 +10,7 @@
     <table class="table table-light" id="tabla">
         <thead class="thead-dark">
             <tr>
-                <th>Ícono</th>
+                <th id="tb-icon">Ícono</th>
                 <th id="tb-nombre">Nombre</th>
                 <th>Descripción</th>
                 <th id="tb-date">Fecha</th>
@@ -24,11 +24,15 @@
                 <td>
                     <img src="IMG/icons/icon{{$task->icon}}.png" alt="" class="table-icon"> 
                 </td>
-                <td >
-                    {{$task->taskName}}
+                <td class="name-column">
+                    <div class="name-div">
+                        {{$task->taskName}}
+                    </div>
                 </td>
                 <td class="task-column">
-                    {{$task->desciption}}
+                    <div class="description-div">
+                        {{$task->desciption}}
+                    </div>
                 </td>
                 <td>
                     {{$task->date}}
