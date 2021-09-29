@@ -3,7 +3,7 @@
 
 <link rel="stylesheet" href="CSS/index.css">
 
-
+<!-- database name task -->
 <h1>Tareas</h1>
      
 <div id="table-container">
@@ -14,7 +14,7 @@
                 <th>Nombre</th>
                 <th>Descripción</th>
                 <th>Fecha</th>
-                <th>Acción</th>
+                <th id="tb-action">Acción</th>
            </tr>
         </thead>
     

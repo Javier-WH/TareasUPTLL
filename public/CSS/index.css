@@ -11,6 +11,8 @@
 
 #table-container {
     height: 630px;
+    width: 1000px;
+    margin: auto;
     margin-bottom: 30px;
 }
 
