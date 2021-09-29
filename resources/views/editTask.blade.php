@@ -3,7 +3,7 @@
 
   <script type="text/javascript" src="{{ asset('JS/edit.js') }}" defer></script>
 
-<h1>Ingresa la nueva tarea</h1>
+<h1>Edita la Tarea</h1>
 <div id="form-container">
     <form method="POST" action="{{route('editTaskPost', $task)}}" id="form">
     @method("put")
