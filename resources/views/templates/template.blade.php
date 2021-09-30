@@ -11,13 +11,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('CSS/adjust.css')}}">
     <link rel="stylesheet" href="{{ asset('CSS/new.css')}}">
-
     <!-- Javascript -->
     <script type="text/javascript" src="{{ asset('JS/bootstrap.js') }}" defer></script>
-    <!-- <script type="text/javascript" src="{{ asset('JS/new.js') }}" defer></script> -->
-    <!-- <script src="JS/bootstrap.js" defer></script>
-    <script src="JS/new.js" defer></script> -->
-
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -30,17 +25,11 @@
       <div class="navbar-nav">
         <a class="nav-link" aria-current="page" href="{{route('index')}}">Lista</a>
         <a class="nav-link" href="{{route('newTask')}}">Nueva Tarea</a>
-        <a class="nav-link" href="{{route('credits')}}">Creditos</a>
+        <a class="nav-link" href="{{route('credits')}}">Créditos</a>
       </div>
     </div>
   </div>
 </nav>
-
-
-
-
-
-
 
     @yield("content")
     

@@ -21,7 +21,6 @@ class TaskController extends Controller
     }
 
     public function insertTask(Request $request){
-// {"_token":"6bV669inWJ41KGWrzIwFcLTmWi8uHYZBxLO0qA78","taskName":"2323","taskDescription":"3213213","taskDate":"2021-08-30","icon":"4"}
         $task = new Task();
         $task->icon = $request->icon;
         $task->taskName = $request->taskName;
